@@ -1,0 +1,35 @@
+---
+title: Análise dos dados de Ocorrências Aeronáuticas na Aviação Civil Brasileira -
+  CENIPA
+author: "Rodrigo Oliveira"
+date: "31/08/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+## Pacotes necessários:
+library(tidyverse)
+```
+
+## A base dos dados
+
+Fazer o detalhamento da base dos dados aqui. Colocar as devidas referências para prosseguimento.
+
+
+## Obtenção dos dados
+
+
+```{r coleta-dados, echo=FALSE}
+
+# Carrega as bases de dados
+oco <- read_delim("http://sistema.cenipa.aer.mil.br/cenipa/media/opendata/oco.csv", delim = "~")
+anv <- read_delim("http://sistema.cenipa.aer.mil.br/cenipa/media/opendata/anv.csv", delim = "~")
+ftc <- read_delim("http://sistema.cenipa.aer.mil.br/cenipa/media/opendata/ftc.csv", delim = "~")
+rec <- read_delim("http://sistema.cenipa.aer.mil.br/cenipa/media/opendata/rec.csv", delim = "~")
+
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
